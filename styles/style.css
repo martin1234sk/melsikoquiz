@@ -385,3 +385,68 @@ h2{
         font-size: 1rem;
     }
 }
+@media screen and (max-width: 450px) {
+    .home-page-content{
+        padding: 2.25rem 2rem;
+    }
+    .home-page-heading{
+        font-size: 1.5rem;
+    }
+    .select-title{
+        width: 280px;
+    }
+    #dificulty-sub-btn{
+        font-size: 1.05rem;
+    }
+
+    .question-section-content{
+        width: 350px;
+        padding: 1.5rem;
+    }
+    .answer-controls button{
+        width: 125px;
+        font-size: .65rem;
+        padding: .55rem 0;
+    }
+    .answer-controls button>i{
+        margin-top: -1.2px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .home-page-heading{
+        font-size: 1.25rem;
+    }
+    .select-title{
+        margin-top: 1.75rem;
+        width: 250px;
+    }
+    .title{
+        font-size: .9rem;
+    }
+    .dificulty-option{
+        font-size: .9rem;
+    }
+    .select-icon{
+        font-size: 1.25rem;
+        margin-top: -5px;
+    }
+    #dificulty-sub-btn{
+        margin-top: 1.75rem;
+        font-size: 1rem;
+    }
+}
+
+@media  screen and (max-width: 330px) {
+    .home-page-content{
+        padding: 2rem 1.8rem;
+    }
+    .select-title{
+        width: 240px;
+    }
+    #dificulty-sub-btn{
+        font-size: .9rem;
+    }
+}   
+
+

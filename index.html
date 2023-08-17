@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meliško Quiz</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nothing+You+Could+Do&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <section id="home-page">
+            <div class="home-page-content">
+                <h1 class="home-page-heading">Otestuj sa aký si Meliškolog</h1>
+                <div class="select-dificulty">
+                    <div class="select-title">
+                        <span class="title">Zvol si obťiažnosť</span>
+                        <span class="select-icon">
+                            <i class="bi bi-caret-down-fill"></i>
+                        </span>
+                    </div>
+                    <ul class="options-list ">
+                        <li data-index="0" class="dificulty-option hide">Ľahká (Pre negramotných) </li>
+                        <li data-index="1" class="dificulty-option hide">Stredná (Pre pokorčilých)</li>
+                        <li data-index="2" class="dificulty-option hide">Ťažka (Kráľ Šumavy)</li>
+                    </ul>
+                    <button id="dificulty-sub-btn">spusti test</button>
+                </div>
+            </div>
+        </section>
+        <section id="question-section" class="hide">
+            <div class="question-section-content">
+                <h1 id="question">Z ktorého mesta pochádzal Maestro?</h1>
+                <ul class="answers-list">
+                    <li class="answer-list-item">
+                        <input type="checkbox" data-index="0" class="answers-checkbox">
+                        <span class="answer">Prievidza</span>
+                    </li>
+                    <li class="answer-list-item">
+                        <input type="checkbox" data-index="1" class="answers-checkbox">
+                        <span class="answer">Prievidza</span>
+                    </li>
+                    <li class="answer-list-item">
+                        <input type="checkbox" data-index="2" class="answers-checkbox">
+                        <span class="answer">Prievidza</span>
+                    </li>
+                </ul>
+                <h4 id="error-alert" class="hide">Odpovedz, ty múmia mumácka!</h4>
+                <div class="answer-controls">
+                    <button id="prev-question">
+                        <i class="bi bi-caret-left-fill"></i>
+                        <span>predošlá otázka</span> 
+                    </button>
+                    <button id="next-question">
+                        <span>ďalšia otázka</span>
+                        <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                </div>
+                <h2 class="question-count">
+                    <span id="question-number">1</span>
+                    /
+                    <span id="total-questions">10</span>
+                </h2>
+            </div>
+        </section>
+        <section id="result-section" class="hide"   >
+            <div class="result-section-content">
+                <h1 id="result-heading">Tvoj výsledok je <span id="result">7</span>/ <span>10</span> v kategorí: <span id="result-category"></span> </h1>
+                <h1 id="category-result">Spadáš do kategorie: <span id="category">opica negramotná</span></h1>
+                <h2 id="conclusion">Si veľmi slabý Meliškolog, mal by sa na sebe pracovať a prestať hniť za života</h2>
+                <button id="try-again-btn">skúsiť znovu</button>
+            </div>
+        </section>
+
+        <script src="scripts/app.js"></script>
+
+    </body>
+</html>

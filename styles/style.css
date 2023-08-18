@@ -402,6 +402,7 @@ h2{
     .question-section-content{
         width: 350px;
         padding: 1.5rem;
+        gap: 1.15rem;
     }
     .answer-controls button{
         width: 125px;
@@ -410,6 +411,18 @@ h2{
     }
     .answer-controls button>i{
         margin-top: -1.2px;
+    }
+    .result-section-content{
+        width: 350px;
+    }
+    .result-section-content h1{
+        font-size: .9rem;
+    }
+    .result-section-content h2{
+        font-size: .85rem;
+    }
+    #try-again-btn{
+        font-size: .85rem;
     }
 }
 
@@ -435,6 +448,35 @@ h2{
         margin-top: 1.75rem;
         font-size: 1rem;
     }
+    .question-section-content{
+        width: 320px;
+        padding: 1.25rem;
+        gap: 1rem;
+    }
+    .answers-checkbox{
+        height: .8rem;
+        width: .8rem;
+    }
+    .answer{
+        font-size: .95rem;
+    }
+    .question-count{
+        font-size: 1.15rem;
+    }
+    .result-section-content{
+        width: 330px;
+        gap: 1.15rem;
+    }
+    .result-section-content h1{
+        font-size: .9rem;
+    }
+    .result-section-content h2{
+        font-size: .85rem;
+    }
+    #try-again-btn{
+        font-size: .85rem;
+    }
+
 }
 
 @media  screen and (max-width: 330px) {
@@ -447,6 +489,31 @@ h2{
     #dificulty-sub-btn{
         font-size: .9rem;
     }
-}   
-
-
+    .question-section-content{
+        width: 300px;
+        padding: 1rem;
+        gap: .8rem;
+    }
+    .question-section-content h1{
+        font-size: 1.05rem;
+    }
+    .answers-checkbox{
+        width: .75rem;
+        height: .75rem;
+    }
+    .answer{
+        font-size: .85rem;
+    }
+    .answer-controls button{
+        width: 115px;
+        font-size: .55rem;
+        padding: .55rem 0;
+    }
+    .question-count{
+        font-size: 1.05rem;
+    }
+    .result-section-content{
+        width: 300px;
+        gap: 1.05rem;
+    }
+}

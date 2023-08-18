@@ -447,10 +447,19 @@ const resultsArray = [
     const questionElement = document.getElementById('question')
     const answersList = document.querySelector('.answers-list')
     const answers = document.querySelectorAll('.answer')
+    const dificultyErrorAlert = document.getElementById('dificulty-error-alert')
 
     // start test
 
     function startTest() {
+
+        if(selectedOptionIndex == undefined){
+            show(dificultyErrorAlert)
+            return
+        } else{
+            hide(dificultyErrorAlert)
+        }
+
         questionElement.innerHTML = questionsArray[selectedOptionIndex][0].question
         answers[0].innerHTML = questionsArray[selectedOptionIndex][0].answers[0]
         answers[1].innerHTML = questionsArray[selectedOptionIndex][0].answers[1]
@@ -464,10 +473,6 @@ const resultsArray = [
 
         title.innerHTML = 'Zvol si obťiažnosť'
     }    
-
-    // check answer
-
-
 
     // next and previous question question
 

@@ -102,6 +102,10 @@ h2{
     background-color: var(--main-bcg);
     color: var(--main-color);
 }
+#dificulty-error-alert{
+    margin-top: 1.25rem;
+    color: var(--error-color);
+}
 #dificulty-sub-btn{
     margin-top: 2.25rem;
     padding: .75rem 1.25rem;
